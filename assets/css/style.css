@@ -11,4 +11,20 @@ p {
   width: 50%;
   margin: 0 auto;
 }
+
+.header {
+  background-color: coral;
+}
+
+.recdocname {
+  background-color: blueviolet;
+}
+
+.customerinfo {
+  background-color: brown;
+}
+
+.course {
+  background-color: cadetblue;
+}
 /*# sourceMappingURL=style.css.map */

@@ -3,25 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>はままつ芸術大学 資料請求フォーム</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<title>はままつ芸術大学 資料請求フォーム</title>
 </head>
 <body>
 
 <div class="wrapper">
 	<div class="header">
 		<h1>はままつ芸術大学　資料請求フォーム</h1>
-	</div>
-
-	<div class="intro">
 		<p>この度は資料請求をしていただき、ありがとうございます。以下の項目に沿って、必要事項を入力してください。</p>
 	</div>
-
+<!-- 
 	入力
 	確認
-	完了
+	完了 -->
 
-	<div class="input">
 	<form action="" method="post" id="rec_documents">
 		<div class="recdocname">
 			<p class="label-title">希望資料</p><br>
@@ -31,40 +27,40 @@
 		
 		<div class="customerinfo">
 			<div class="customerinfo_name">
-				<label for="name" class="label-title">氏名（漢字）</label>
-				<input type="text" name="name" id="name" autocomplete="name">
+				<p class="label-title">氏名（漢字）</p>
+				<input type="text" name="name" id="name" autocomplete="name"><br>
 			</div>
 
 			<div class="customerinfo_kananame">
-				<label for="kananame" class="label-title">氏名（ふりがな）</label>
-				<input type="text" name="kananame" id="kananame">
+				<p class="label-title">氏名（ふりがな）</p>
+				<input type="text" name="kananame" id="kananame"><br>
 			</div>
 
 			<div class="customerinfo_address">
 				<p class="label-title">住所</p>
-				<label for="postal-code" class="label">郵便番号</label><br>
+				<p class="label-sub">郵便番号</p><br>
 				<input type="text" name="postal-code" id="postal-code"><br>
 
-				<label for="address-level1" class="label">番地・マンション名</label><br>
+				<p class="label-sub">番地・マンション名</p><br>
 				<input type="text" name="address-level1" id="address-level1"><br>
 
-				<label for="address-level2" class="label">市区町村</label><br>
+				<p class="label-sub">市区町村</p><br>
 				<input type="text" name="address-level2" id="address-level2"><br>
 				
-				<label for="address-line1" class="label">番地等</label><br>
+				<p class="label-sub">番地等</p><br>
 				<input type="text" name="address-line1" id="address-line1"><br>
 
-				<label for="address-line2" class="label">マンション名</label><br>
+				<p class="label-sub">マンション名</p><br>
 				<input type="text" name="address-line2" id="address-line2"><br>
 			</div>
 
 			<div class="tel">
-				<label for="tel" class="label-title">電話番号</label>
+				<p class="label-title">電話番号</p>
 				<input type="tel" name="tel" id="tel">
 			</div>
 
 			<div class="email">
-				<label for="email" class="label-title">メールアドレス</label>
+				<p class="label-title">メールアドレス</p>
 				<input type="email" name="email" id="email">
 			</div>
 
@@ -75,10 +71,9 @@
 			</div>
 
 			<div class="bday">
-				<label for="bday" class="label-title">生年月日</label>
+				<p class="label-title">生年月日</p>
 				<input type="text" name="bday" id="bday">
 			</div>
-
 		</div>
 
 		<div class="course">
@@ -94,10 +89,7 @@
 
 	</form>
 
-	</div>
-
 </div>
-
 
 </body>
 </html>
