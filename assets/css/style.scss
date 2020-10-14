@@ -4,7 +4,6 @@ h1{
 
 p{
 	font-size: 14px;
-	display: inline;
 }
 
 .wrapper{
@@ -26,4 +25,18 @@ p{
 
 .course{
 	background-color: cadetblue;
+}
+
+.label-title{
+	background-color: crimson;
+}
+
+.inputarea{
+	background-color: darkgoldenrod;
+}
+
+// ---------------------
+.customerinfo-input{
+	display: flex;
+	flex-direction: row;
 }
