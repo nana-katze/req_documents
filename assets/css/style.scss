@@ -1,3 +1,7 @@
+$color-border: #999999;
+$color-form-bg: #cccccc;
+$color-form-btn: #99ccff;
+
 h1{
 	font-size: 16px;
 }
@@ -8,35 +12,120 @@ p{
 
 .wrapper{
 	width: 50%;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 .header{
-	background-color: coral;
+	margin-bottom: 10px;
 }
 
 .recdocname{
-	background-color: blueviolet;
+	border: 1px solid $color-border;
+	margin-bottom: 20px;
 }
 
 .customerinfo{
-	background-color: brown;
+	border: 1px solid $color-border;
+	margin-bottom: 20px;
 }
 
 .course{
-	background-color: cadetblue;
+	border: 1px solid $color-border;
+	margin-bottom: 20px;
 }
 
-.label-title{
-	background-color: crimson;
-}
-
-.inputarea{
-	background-color: darkgoldenrod;
-}
 
 // ---------------------
 .customerinfo-input{
 	display: flex;
 	flex-direction: row;
+	border-bottom: 1px solid $color-border;
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+
+.label-title{
+	background-color: $color-form-bg;
+	padding: 10px;
+	border-bottom: 1px solid $color-border;
+}
+
+.label-title_side{
+	width: 200px;
+	border-right: 1px solid $color-border;
+	border-bottom: none;
+}
+
+// フォームデザイン
+input{
+	&[type=text]{
+		height: 1.8em;
+		border: 1px solid $color-border;
+		border-radius: 5px;
+		box-shadow: 0px 4px 6px -7px rgba(0,0,0,0.6) inset;
+	}
+	&[type=tel]{
+		@extend input[type=text];
+	}
+	&[type=email]{
+		@extend input[type=text];
+	}
+	&[type=checkbox]{
+		position: relative;
+		top: 5px;
+		margin-right: 5px;
+	}
+	&[type=radio]{
+		position: relative;
+		top: -2px;
+		margin-right: 5px;
+	}
+}
+
+.inputarea{
+	padding: 15px 10px;
+}
+
+.recdocname,.address,.course{
+	input{
+		margin-bottom: 14px;
+	}
+}
+
+.btn{
+	text-align: center;
+}
+
+button{
+	width: 200px;
+	height: 50px;
+	background-color: $color-form-bg;
+	text-align: center;
+	border-radius: 10px;
+	transition: all 0.3s ease 0s;
+	margin: 0 auto;
+	border: 1px solid $color-border;
+	&:hover{
+		opacity: 0.6;
+	}
+}
+
+.header{
+	padding: 10px;
+	margin-bottom: 20px;
+	h1{
+		padding-left: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		font-weight: bold;
+		border-bottom: 2px solid $color-form-bg;
+	}
+	p{
+		padding-left: 10px;
+	}
+}
+
+button{
+	margin-bottom: 60px;
 }

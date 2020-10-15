@@ -8,31 +8,26 @@ p {
 
 .wrapper {
   width: 50%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .header {
-  background-color: coral;
+  margin-bottom: 10px;
 }
 
 .recdocname {
-  background-color: blueviolet;
+  border: 1px solid #999999;
+  margin-bottom: 20px;
 }
 
 .customerinfo {
-  background-color: brown;
+  border: 1px solid #999999;
+  margin-bottom: 20px;
 }
 
 .course {
-  background-color: cadetblue;
-}
-
-.label-title {
-  background-color: crimson;
-}
-
-.inputarea {
-  background-color: darkgoldenrod;
+  border: 1px solid #999999;
+  margin-bottom: 20px;
 }
 
 .customerinfo-input {
@@ -43,5 +38,91 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-bottom: 1px solid #999999;
+}
+
+.customerinfo-input:last-child {
+  border-bottom: none;
+}
+
+.label-title {
+  background-color: #cccccc;
+  padding: 10px;
+  border-bottom: 1px solid #999999;
+}
+
+.label-title_side {
+  width: 200px;
+  border-right: 1px solid #999999;
+  border-bottom: none;
+}
+
+input[type=text], input[type=tel], input[type=email] {
+  height: 1.8em;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 6px -7px rgba(0, 0, 0, 0.6) inset;
+          box-shadow: 0px 4px 6px -7px rgba(0, 0, 0, 0.6) inset;
+}
+
+input[type=checkbox] {
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+input[type=radio] {
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+}
+
+.inputarea {
+  padding: 15px 10px;
+}
+
+.recdocname input, .address input, .course input {
+  margin-bottom: 14px;
+}
+
+.btn {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #cccccc;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin: 0 auto;
+  border: 1px solid #999999;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.header {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #cccccc;
+}
+
+.header p {
+  padding-left: 10px;
+}
+
+button {
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=style.css.map */
