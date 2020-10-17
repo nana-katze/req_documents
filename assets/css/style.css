@@ -57,6 +57,10 @@ p {
   border-bottom: none;
 }
 
+input:not(:last-child) {
+  margin-bottom: 1em;
+}
+
 input[type=text], input[type=tel], input[type=email] {
   height: 1.8em;
   border: 1px solid #999999;
@@ -81,8 +85,32 @@ input[type=radio] {
   padding: 15px 10px;
 }
 
-.recdocname input, .address input, .course input {
-  margin-bottom: 14px;
+.inputarea .name, .inputarea .kananame {
+  width: 350px;
+}
+
+.inputarea .postal-code {
+  width: 100px;
+}
+
+.inputarea .email, .inputarea .address-level2, .inputarea .address-line1, .inputarea .address-line2 {
+  width: 300px;
+}
+
+.inputarea .tel, .inputarea .bday {
+  width: 150px;
+}
+
+.inputarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .btn {

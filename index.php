@@ -28,43 +28,46 @@
 		
 		<div class="customerinfo">
 			<div class="customerinfo-input name">
-				<div class="label-title label-title_side"><p>氏名（漢字）</p></div>
-				<div class="inputarea"><input type="text" name="name" autocomplete="name"></div>
+				<div class="label-title label-title_side"><p>名前</p></div>
+				<div class="inputarea"><input type="text" class="name" name="name" autocomplete="name" placeholder="鈴木 花子"></div>
 			</div>
 
 			<div class="customerinfo-input kananame">
-				<div class="label-title label-title_side"><p>氏名（ふりがな）</p></div>
-				<div class="inputarea"><input type="text" name="kananame" autocomplete="kananame"></div>
+				<div class="label-title label-title_side"><p>名前（ふりがな）</p></div>
+				<div class="inputarea"><input type="text" class="kananame" name="kananame" autocomplete="kananame" placeholder="すずき はなこ"></div>
 			</div>
 
 			<div class="customerinfo-input address">
 				<div class="label-title label-title_side"><p>住所</p></div>
 				<div class="inputarea">
 					<p class="label-sub">郵便番号</p>
-					<input type="text" name="postal-code" autocomplete="postal-code"><br>
+					<input type="text" class="postal-code" name="postal-code" autocomplete="postal-code" placeholder="1230001">
 
 					<p class="label-sub">都道府県</p>
-					<input type="text" name="address-level1" autocomplete="address-level1"><br>
+					<input type="text" class="address-level1" name="address-level1" autocomplete="address-level1" placeholder="静岡県">
 
 					<p class="label-sub">市区町村</p>
-					<input type="text" name="address-level2" autocomplete="address-level2"><br>
+					<input type="text" class="address-level2" name="address-level2" autocomplete="address-level2" placeholder="〇〇市〇〇区〇〇町">
 					
-					<p class="label-sub">番地等</p>
-					<input type="text" name="address-line1" autocomplete="address-line1"><br>
+					<p class="label-sub">丁目・番地等</p>
+					<input type="text" class="address-line1" name="address-line1" autocomplete="address-line1" placeholder="〇丁目1-1-1">
 
-					<p class="label-sub">マンション名</p>
-					<input type="text" name="address-line2" autocomplete="address-line2"><br>
+					<p class="label-sub">マンション・建物名</p>
+					<input type="text" class="address-line2" name="address-line2" autocomplete="address-line2" placeholder="〇〇マンション 101号室">
 				</div>
 			</div>
 
 			<div class="customerinfo-input tel">
-				<div class="label-title label-title_side"><p>電話番号</p></div>
-				<div class="inputarea"><input type="tel" name="tel" autocomplete="tel"></div>
+				<div class="label-title label-title_side"><p>電話番号（携帯電話番号も可）</p></div>
+				<div class="inputarea"><input type="tel" class="tel" name="tel" autocomplete="tel" placeholder="090XXXXXXXX"></div>
 			</div>
 
 			<div class="customerinfo-input email">
 				<div class="label-title label-title_side"><p>メールアドレス</p></div>
-				<div class="inputarea"><input type="email" name="email" autocomplete="email"></div>
+				<div class="inputarea">
+					<input type="email" class="email" name="email" autocomplete="email" placeholder="XXXX@gmail.com">
+					<input type="email" class="email" name="email-chk" autocomplete="email" placeholder="XXXX@gmail.com（確認のため再入力）">
+				</div>
 			</div>
 
 			<div class="customerinfo-input sex">
@@ -79,7 +82,7 @@
 
 			<div class="customerinfo-input bday">
 				<div class="label-title label-title_side"><p>生年月日</p></div>
-				<div class="inputarea"><input type="text" name="bday" autocomplete="bday"></div>
+				<div class="inputarea"><input type="text" class="bday" name="bday" autocomplete="bday" placeholder="2002-04-01"></div>
 			</div>
 		</div>
 
