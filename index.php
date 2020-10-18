@@ -16,7 +16,7 @@
 	</div>
 
 	<form action="" method="post" id="rec_documents">
-		<div class="recdocname">
+		<div class="form-item recdocname">
 			<div class="label-title"><p>希望資料</p></div>
 			<div class="inputarea">
 				<p>
@@ -26,47 +26,49 @@
 			</div>
 		</div>
 		
-		<div class="customerinfo">
+		<div class="form-item customerinfo">
 			<div class="customerinfo-input name">
 				<div class="label-title label-title_side"><p>名前</p></div>
-				<div class="inputarea"><input type="text" class="name" name="name" autocomplete="name" placeholder="鈴木 花子"></div>
+				<div class="inputarea"><p><input type="text" class="name" name="name" autocomplete="name" placeholder="鈴木 花子"></p></div>
 			</div>
 
 			<div class="customerinfo-input kananame">
 				<div class="label-title label-title_side"><p>名前（ふりがな）</p></div>
-				<div class="inputarea"><input type="text" class="kananame" name="kananame" autocomplete="kananame" placeholder="すずき はなこ"></div>
+				<div class="inputarea"><p><input type="text" class="kananame" name="kananame" autocomplete="kananame" placeholder="すずき はなこ"></p></div>
 			</div>
 
 			<div class="customerinfo-input address">
 				<div class="label-title label-title_side"><p>住所</p></div>
 				<div class="inputarea">
 					<p class="label-sub">郵便番号</p>
-					<input type="text" class="postal-code" name="postal-code" autocomplete="postal-code" placeholder="1230001">
+					<p><input type="text" class="postal-code" name="postal-code" autocomplete="postal-code" placeholder="1230001"></p>
 
 					<p class="label-sub">都道府県</p>
-					<input type="text" class="address-level1" name="address-level1" autocomplete="address-level1" placeholder="静岡県">
+					<p><input type="text" class="address-level1" name="address-level1" autocomplete="address-level1" placeholder="静岡県"></p>
 
 					<p class="label-sub">市区町村</p>
-					<input type="text" class="address-level2" name="address-level2" autocomplete="address-level2" placeholder="〇〇市〇〇区〇〇町">
+					<p><input type="text" class="address-level2" name="address-level2" autocomplete="address-level2" placeholder="〇〇市〇〇区〇〇町"></p>
 					
 					<p class="label-sub">丁目・番地等</p>
-					<input type="text" class="address-line1" name="address-line1" autocomplete="address-line1" placeholder="〇丁目1-1-1">
+					<p><input type="text" class="address-line1" name="address-line1" autocomplete="address-line1" placeholder="〇丁目1-1-1"></p>
 
 					<p class="label-sub">マンション・建物名</p>
-					<input type="text" class="address-line2" name="address-line2" autocomplete="address-line2" placeholder="〇〇マンション 101号室">
+					<p><input type="text" class="address-line2" name="address-line2" autocomplete="address-line2" placeholder="〇〇マンション 101号室"></p>
 				</div>
 			</div>
 
 			<div class="customerinfo-input tel">
 				<div class="label-title label-title_side"><p>電話番号（携帯電話番号も可）</p></div>
-				<div class="inputarea"><input type="tel" class="tel" name="tel" autocomplete="tel" placeholder="090XXXXXXXX"></div>
+				<div class="inputarea"><p><input type="tel" class="tel" name="tel" autocomplete="tel" placeholder="090XXXXXXXX"></p></div>
 			</div>
 
 			<div class="customerinfo-input email">
 				<div class="label-title label-title_side"><p>メールアドレス</p></div>
 				<div class="inputarea">
-					<input type="email" class="email" name="email" autocomplete="email" placeholder="XXXX@gmail.com">
-					<input type="email" class="email" name="email-chk" autocomplete="email" placeholder="XXXX@gmail.com（確認のため再入力）">
+					<p>
+						<input type="email" class="email" name="email" autocomplete="email" placeholder="XXXX@gmail.com">
+						<input type="email" class="email" name="email-chk" autocomplete="email" placeholder="XXXX@gmail.com（確認のため再入力）">
+					</p>
 				</div>
 			</div>
 
@@ -82,11 +84,11 @@
 
 			<div class="customerinfo-input bday">
 				<div class="label-title label-title_side"><p>生年月日</p></div>
-				<div class="inputarea"><input type="text" class="bday" name="bday" autocomplete="bday" placeholder="2002-04-01"></div>
+				<div class="inputarea"><p><input type="text" class="bday" name="bday" autocomplete="bday" placeholder="2002-04-01"></p></div>
 			</div>
 		</div>
 
-		<div class="course">
+		<div class="form-item course">
 			<div class="label-title"><p>志望学部・学科をお答えください（複数選択可）</p></div>
 			<div class="inputarea">
 				<p>
@@ -100,7 +102,7 @@
 		</div>
 
 		<div class="btn">
-			<button type="submit" form="rec_documents"><p>確認する</p></button>
+			<button type="submit" form="rec_documents" class="btn_submit"><p>確認する</p></button>
 		</div>
 
 	</form>
