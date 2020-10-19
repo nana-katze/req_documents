@@ -58,8 +58,8 @@
 			</div>
 
 			<div class="customerinfo-input tel">
-				<div class="label-title label-title_side"><p>電話番号（携帯電話番号も可）</p></div>
-				<div class="inputarea"><p><input type="tel" class="tel" name="tel" autocomplete="tel" placeholder="090XXXXXXXX"></p></div>
+				<div class="label-title label-title_side"><p>電話番号</p></div>
+				<div class="inputarea"><p><input type="tel" class="tel" name="tel" autocomplete="tel" placeholder="090XXXXXXXX">（携帯電話番号も可）</p></div>
 			</div>
 
 			<div class="customerinfo-input email">

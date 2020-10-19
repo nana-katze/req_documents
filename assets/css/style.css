@@ -22,12 +22,36 @@ button:hover {
   opacity: 0.6;
 }
 
-/* 共通スタイル */
 .wrapper {
   width: 50%;
   margin: 20px auto;
 }
 
+/* フォームの共通スタイル */
+form .form-item {
+  margin-bottom: 20px;
+}
+
+input[type=text], input[type=tel], input[type=email] {
+  height: 1.8em;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 6px -7px rgba(0, 0, 0, 0.6) inset;
+          box-shadow: 0px 4px 6px -7px rgba(0, 0, 0, 0.6) inset;
+}
+
+input[type=checkbox], input[type=radio] {
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+.label-title {
+  padding: 10px;
+  background-color: #cccccc;
+}
+
+/* ヘッダーのスタイル */
 .header {
   padding: 10px;
   margin-bottom: 20px;
@@ -45,26 +69,7 @@ button:hover {
   padding-left: 10px;
 }
 
-/* フォーム */
-form .form-item {
-  margin-bottom: 20px;
-  border: 1px solid #999999;
-}
-
-input[type=text], input[type=tel], input[type=email] {
-  height: 1.8em;
-  border: 1px solid #999999;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 6px -7px rgba(0, 0, 0, 0.6) inset;
-          box-shadow: 0px 4px 6px -7px rgba(0, 0, 0, 0.6) inset;
-}
-
-input[type=checkbox], input[type=radio] {
-  position: relative;
-  top: 5px;
-  margin-right: 5px;
-}
-
+/* フォームのスタイル */
 .inputarea {
   padding: 15px 10px;
   display: -webkit-box;
@@ -98,31 +103,48 @@ input[type=checkbox], input[type=radio] {
   width: 150px;
 }
 
-.label-title {
-  padding: 10px;
-  background-color: #cccccc;
-  border-bottom: 1px solid #999999;
+/* Gridの設定 */
+.customerinfo-input {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+  -ms-grid-rows: (max-content)[2];
+      grid-template-rows: repeat(2, -webkit-max-content);
+      grid-template-rows: repeat(2, max-content);
+  border: 1px solid #999999;
+}
+
+.customerinfo-input:not(:last-child) {
+  border-bottom: none;
 }
 
 .label-title_side {
-  width: 200px;
-  border-right: 1px solid #999999;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.inputarea {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.recdocname .label-title, .course .label-title {
+  border: 1px solid #999999;
   border-bottom: none;
 }
 
-.customerinfo-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border-bottom: 1px solid #999999;
+.recdocname .inputarea, .course .inputarea {
+  border: 1px solid #999999;
 }
 
-.customerinfo-input:last-child {
+.customerinfo .label-title_side {
+  border: 1px solid #999999;
+  border-top: none;
   border-bottom: none;
+  border-left: none;
 }
 
 /* 送信ボタン */

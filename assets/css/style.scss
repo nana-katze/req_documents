@@ -1,6 +1,10 @@
 $color-border: #999999;
 $color-form-bg: #cccccc;
 
+@mixin border {
+	border: 1px solid $color-border;
+}
+
 /* 共通スタイル */
 h1{
 	font-size: 16px;
@@ -16,38 +20,21 @@ button{
 	text-align: center;
 	border-radius: 10px;
 	transition: all 0.3s ease 0s;
-	border: 1px solid $color-border;
+	@include border;
 	&:hover{
 		opacity: 0.6;
 	}
 }
 
-/* 共通スタイル */
 .wrapper{
 	width: 50%;
 	margin: 20px auto;
 }
 
-.header{
-	padding: 10px;
-	margin-bottom: 20px;
-	h1{
-		padding-left: 10px;
-		padding-bottom: 10px;
-		margin-bottom: 10px;
-		font-weight: bold;
-		border-bottom: 2px solid $color-form-bg;
-	}
-	p{
-		padding-left: 10px;
-	}
-}
-
-/* フォーム */
+/* フォームの共通スタイル */
 form{
 	.form-item{
 		margin-bottom: 20px;
-		border: 1px solid $color-border;
 	}
 }
 
@@ -74,6 +61,28 @@ input{
 	}
 }
 
+.label-title{
+	padding: 10px;
+	background-color: $color-form-bg;
+}
+
+/* ヘッダーのスタイル */
+.header{
+	padding: 10px;
+	margin-bottom: 20px;
+	h1{
+		padding-left: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		font-weight: bold;
+		border-bottom: 2px solid $color-form-bg;
+	}
+	p{
+		padding-left: 10px;
+	}
+}
+
+/* フォームのスタイル */
 .inputarea{
 	padding: 15px 10px;
 	display: flex;
@@ -96,26 +105,43 @@ input{
 	}
 }
 
-.label-title{
-	padding: 10px;
-	background-color: $color-form-bg;
-	border-bottom: 1px solid $color-border;
+/* Gridの設定 */
+.customerinfo-input{
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: repeat(2,max-content);
+	@include border;
+	&:not(:last-child){
+		border-bottom: none;
+	}
 }
 
 .label-title_side{
-	width: 200px;
-	border-right: 1px solid $color-border;
-	border-bottom: none;
+	grid-column: 1/2;
 }
 
-.customerinfo-input{
-	display: flex;
-	flex-direction: row;
-	border-bottom: 1px solid $color-border;
-		&:last-child{
-			border-bottom: none;
-		}
+.inputarea{
+	grid-column: 2/3;
+}
+
+.recdocname, .course{
+	.label-title{
+		@include border;
+		border-bottom: none;
 	}
+	.inputarea{
+		@include border;
+	}
+}
+
+.customerinfo{
+	.label-title_side{
+		@include border;
+		border-top: none;
+		border-bottom: none;
+		border-left: none;
+	}	
+}
 
 /* 送信ボタン */
 .btn{
