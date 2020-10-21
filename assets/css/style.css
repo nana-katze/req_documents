@@ -32,7 +32,7 @@ form .form-item {
   margin-bottom: 20px;
 }
 
-input[type=text], input[type=tel], input[type=email] {
+input[type=text], input[type=tel], input[type=email], .select-wrap {
   height: 1.8em;
   border: 1px solid #999999;
   border-radius: 5px;
@@ -44,6 +44,53 @@ input[type=checkbox], input[type=radio] {
   position: relative;
   top: 5px;
   margin-right: 5px;
+}
+
+.select-wrap {
+  overflow: hidden;
+  width: 200px;
+}
+
+.select-wrap select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.select-wrap select::-ms-expand {
+  display: none;
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+  pointer-events: none;
+}
+
+.select-wrap select {
+  padding: 8px 38px 8px 8px;
+  color: #000;
 }
 
 .label-title {
