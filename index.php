@@ -60,10 +60,8 @@
 			<div class="customerinfo-input email">
 				<div class="label-title label-title_side"><p>メールアドレス</p></div>
 				<div class="inputarea">
-					<p>
-						<input type="email" class="email" name="email" autocomplete="email" placeholder="XXXX@gmail.com">
-						<input type="email" class="email" name="email-chk" autocomplete="email" placeholder="XXXX@gmail.com（確認のため再入力）">
-					</p>
+					<p><input type="email" class="email" name="email" autocomplete="email" placeholder="XXXX@gmail.com"></p>
+					<p><input type="email" class="email" name="email-chk" autocomplete="email" placeholder="XXXX@gmail.com（確認のため再入力）"></p>
 				</div>
 			</div>
 
