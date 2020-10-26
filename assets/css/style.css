@@ -28,7 +28,7 @@ button:hover {
 }
 
 /* フォームの共通スタイル */
-form .form-item {
+.form-item {
   margin-bottom: 20px;
 }
 

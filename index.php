@@ -15,20 +15,20 @@
 		<p>この度は資料請求をしていただき、ありがとうございます。<br>以下の項目に沿って、必要事項を入力してください。</p>
 	</div>
 
-	<form action="" method="post" id="rec_documents">
+	<form action="confirm.php" method="post" id="rec_documents">
 		<div class="form-item recdocname">
 			<div class="label-title"><p>希望資料</p></div>
 			<div class="inputarea">
 				<p>
-					<input type="checkbox" name="pamphlet" id="pamphlet" value="1"><label for="pamphlet">2021年度パンフレット（学部）</label><br>
-					<input type="checkbox" name="graduationworks" id="graduationworks" value="2"><label for="graduationworks">2021年度 卒業制作優秀作品集</label>
+					<input type="checkbox" name="recdocname[]" id="pamphlet" value="2021年度パンフレット（学部）"><label for="pamphlet">2021年度パンフレット（学部）</label><br>
+					<input type="checkbox" name="recdocname[]" id="graduationworks" value="2021年度 卒業制作優秀作品集"><label for="graduationworks">2021年度 卒業制作優秀作品集</label>
 				</p>
 			</div>
 		</div>
 		
 		<div class="form-item customerinfo">
 			<div class="customerinfo-input name">
-				<div class="label-title label-title_side"><p>名前</p></div>
+				<div class="label-title label-title_side"><p>名前（漢字）</p></div>
 				<div class="inputarea"><p><input type="text" class="name" name="name" autocomplete="name" placeholder="鈴木 花子"></p></div>
 			</div>
 
@@ -71,8 +71,8 @@
 				<div class="label-title label-title_side"><p>性別</p></div>
 				<div class="inputarea">
 					<p>
-						<input type="radio" name="sex" id="male" value="male"><label for="male">男</label>
-						<input type="radio" name="sex" id="female" value="female"><label for="female">女</label>
+						<input type="radio" name="sex" id="male" value="男"><label for="male">男</label>
+						<input type="radio" name="sex" id="female" value="女"><label for="female">女</label>
 					</p>
 				</div>
 			</div>
@@ -87,11 +87,11 @@
 			<div class="label-title"><p>志望学部・学科をお答えください（複数選択可）</p></div>
 			<div class="inputarea">
 				<p>
-					<input type="checkbox" name="pnt_jp" id="paint_jp" value="1"><label for="paint_jp">美術学部　美術学科　日本画専攻</label><br>
-					<input type="checkbox" name="pnt_oil" id="paint_oil" value="2"><label for="paint_oil">美術学部　美術学科　油絵専攻</label><br>
-					<input type="checkbox" name="sculpture" id="sculpture" value="3"><label for="sculpture">美術学部　美術学科　彫刻専攻</label><br>
-					<input type="checkbox" name="dsgn_product" id="dsgn_product" value="4"><label for="dsgn_product">美術学部　デザイン学科　プロダクトデザイン専攻</label><br>
-					<input type="checkbox" name="dsgn_architecture" id="dsgn_architecture" value="5"><label for="dsgn_architecture">美術学部　デザイン学科　建築デザイン専攻</label><br>
+					<input type="checkbox" name="course[]" id="paint_jp" value="美術学部　美術学科　日本画専攻"><label for="paint_jp">美術学部　美術学科　日本画専攻</label><br>
+					<input type="checkbox" name="course[]" id="paint_oil" value="美術学部　美術学科　油絵専攻"><label for="paint_oil">美術学部　美術学科　油絵専攻</label><br>
+					<input type="checkbox" name="course[]" id="sculpture" value="美術学部　美術学科　彫刻専攻"><label for="sculpture">美術学部　美術学科　彫刻専攻</label><br>
+					<input type="checkbox" name="course[]" id="dsgn_product" value="美術学部　デザイン学科　プロダクトデザイン専攻"><label for="dsgn_product">美術学部　デザイン学科　プロダクトデザイン専攻</label><br>
+					<input type="checkbox" name="course[]" id="dsgn_architecture" value="美術学部　デザイン学科　建築デザイン専攻"><label for="dsgn_architecture">美術学部　デザイン学科　建築デザイン専攻</label><br>
 				</p>
 			</div>
 		</div>
