@@ -87,48 +87,38 @@ input[type=checkbox], input[type=radio] {
   margin-bottom: 14px;
 }
 
-.inputarea .name, .inputarea .kananame {
-  width: 350px;
-}
-
-.inputarea .postal-code {
-  width: 100px;
+.inputarea .name, .inputarea .kananame, .inputarea .email, .inputarea .address-line1 {
+  width: 75%;
 }
 
 .inputarea .email, .inputarea .address-line1 {
-  width: 300px;
+  width: 75%;
 }
 
-.inputarea .tel, .inputarea .bday, .inputarea .address-level1 {
-  width: 150px;
+.inputarea .postal-code {
+  width: 20%;
+}
+
+.inputarea .tel {
+  width: 35%;
+}
+
+.inputarea .bday, .inputarea .address-level1 {
+  width: 25%;
 }
 
 /* Gridの設定 */
 .customerinfo-input {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px 1fr;
-      grid-template-columns: 200px 1fr;
-  -ms-grid-rows: (max-content)[2];
-      grid-template-rows: repeat(2, -webkit-max-content);
-      grid-template-rows: repeat(2, max-content);
+  -ms-grid-columns: 30% 1fr;
+      grid-template-columns: 30% 1fr;
+  grid-auto-rows: auto;
   border: 1px solid #999999;
 }
 
 .customerinfo-input:not(:last-child) {
   border-bottom: none;
-}
-
-.label-title_side {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.inputarea {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
 }
 
 .recdocname .label-title, .course .label-title {
@@ -155,5 +145,59 @@ input[type=checkbox], input[type=radio] {
 
 .btn .btn_submit {
   background-color: #cccccc;
+}
+
+@media screen and (max-width: 559px) {
+  /* 全体の設定 */
+  p {
+    font-size: 10px;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  /* フォームのスタイル */
+  .inputarea .email, .inputarea .address-line1 {
+    width: 100%;
+  }
+  .inputarea .postal-code {
+    width: 30%;
+  }
+  .inputarea .tel {
+    width: 45%;
+  }
+  .inputarea .bday, .inputarea .address-level1 {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  /* 全体の設定 */
+  p {
+    font-size: 12px;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  /* Gridの設定 */
+  .customerinfo-input {
+    grid-auto-columns: auto;
+  }
+  .label-title_side {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .inputarea {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  /* borderの設定 */
+  .customerinfo .label-title_side {
+    border: 1px solid #999999;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
