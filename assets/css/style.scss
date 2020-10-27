@@ -106,6 +106,16 @@ input{
 	}
 }
 
+/* エラーメッセージのスタイル */
+p.error{
+	display: block;
+	color:#ff0000;
+}
+
+.recdocname_error, .tel_error, .course_error{
+	display: none;
+}
+
 /* Gridの設定 */
 .customerinfo-input{
 	display: grid;
