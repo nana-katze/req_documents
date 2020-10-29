@@ -76,12 +76,6 @@
 				</div>
 			</div>
 
-			<div class="customerinfo-input bday">
-				<div class="label-title label-title_side"><p>生年月日</p></div>
-				<div class="inputarea"><p><input type="text" class="bday" name="bday" autocomplete="bday" placeholder="2002-04-01"></p></div>
-			</div>
-		</div>
-
 		<div class="form-item course">
 			<div class="label-title"><p>志望学部・学科をお答えください（複数選択可）</p></div>
 			<div class="inputarea">

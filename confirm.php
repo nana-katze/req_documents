@@ -31,7 +31,6 @@
 			if(isset($_POST["sex"])){
 				$sex = $_POST["sex"];
 			}
-			$bday = $_POST["bday"];
 			if(isset($_POST["course"]) && is_array($_POST["course"])){
 				$course = implode("\n", $_POST["course"]);
 			}
@@ -72,10 +71,6 @@
 			<div class="inputarea"><p><?php echo $sex ?></p></div>
 		</div>
 
-		<div class="customerinfo-input bday">
-			<div class="label-title label-title_side"><p>生年月日</p></div>
-			<div class="inputarea"><p><?php echo $bday ?></p></div>
-		</div>
 	</div>
 
 	<div class="form-item course">

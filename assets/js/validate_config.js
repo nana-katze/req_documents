@@ -4,11 +4,6 @@ $(function(){
 	var errorMsg_number = '数値を入力してください';
 	var errorMsg_email = 'メールアドレス形式で入力してください';
 	var errorMsg_equalTo = 'メールアドレスが一致しません';
-	var errorMsg_date = '日付形式で入力してください';
-
-	$.validator.addMethod("isDate", function (value, element) {
-					return false;
-	});
 
 	$('#rec_documents').validate({
 		errorElement:'p',
@@ -45,9 +40,6 @@ $(function(){
 				equalTo: '#email_hoge'
 				}
 			},
-			bday: {
-				isDate: true
-			},
 			'course[]': {
 				required: true
 			},
@@ -83,9 +75,6 @@ $(function(){
 				required: errorMsg_required,
 				email: errorMsg_email,
 				equalTo: errorMsg_equalTo
-			},
-			bday: {
-				isDate: errorMsg_date
 			},
 			'course[]': {
 				required: errorMsg_chkbox
