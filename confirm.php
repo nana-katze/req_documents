@@ -23,9 +23,9 @@
 			}
 			$name = $_POST["name"];
 			$kananame = $_POST["kananame"];
-			$postal_code = $_POST["postal-code"];
-			$address_level1 = $_POST["address-level1"];
-			$address_line1 = $_POST["address-line1"];
+			$postal_code = $_POST["postal_code"];
+			$address_level1 = $_POST["address_level1"];
+			$address_line1 = $_POST["address_line1"];
 			$tel = $_POST["tel"];
 			$email = $_POST["email"];
 			if(isset($_POST["sex"])){

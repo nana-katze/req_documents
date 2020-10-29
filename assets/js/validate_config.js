@@ -1,4 +1,15 @@
 $(function(){
+	var errorMsg_chkbox = '1つ以上選択してください';
+	var errorMsg_required = '値を入力してください';
+	var errorMsg_number = '数値を入力してください';
+	var errorMsg_email = 'メールアドレス形式で入力してください';
+	var errorMsg_equalTo = 'メールアドレスが一致しません';
+	var errorMsg_date = '日付形式で入力してください';
+
+	$.validator.addMethod("isDate", function (value, element) {
+					return false;
+	});
+
 	$('#rec_documents').validate({
 		errorElement:'p',
 		rules: {
@@ -24,35 +35,62 @@ $(function(){
 				required: true,
 				number: true
 			},
-			email: {
+			email_hoge: {
+				required: true,
+				email: true
+			},
+			email_chk: {
+				required: true,
 				email: true,
-				equalTo: 'email_chk'
+				equalTo: '#email_hoge'
+				}
 			},
 			bday: {
-				date: true
+				isDate: true
 			},
 			'course[]': {
 				required: true
+			},
+
+		messages: {
+			'recdocname[]': {
+				required: errorMsg_chkbox
+			},
+			name: {
+				required: errorMsg_required
+			},
+			kananame: {
+				required: errorMsg_required
+			},
+			postal_code: {
+				required: errorMsg_required
+			},
+			address_level1: {
+				required: errorMsg_required
+			},
+			address_line1: {
+				required: errorMsg_required
+			},
+			tel: {
+				required: errorMsg_required,
+				number: errorMsg_number
+			},
+			email_hoge: {
+				required: errorMsg_required,
+				email: errorMsg_email
+			},
+			email_chk: {
+				required: errorMsg_required,
+				email: errorMsg_email,
+				equalTo: errorMsg_equalTo
+			},
+			bday: {
+				isDate: errorMsg_date
+			},
+			'course[]': {
+				required: errorMsg_chkbox
 			}
 		},
-
-		// messages: {
-		// 	name: {
-		// 		required: '値が未入力です'
-		// 	},
-		// 	kananame: {
-		// 		required: '値が未入力です'
-		// 	},
-		// 	postal_code: {
-		// 		required: '値が未入力です'
-		// 	},
-		// 	address_level1: {
-		// 		required: '値が未入力です'
-		// 	},
-		// 	address_line1: {
-		// 		required: '値が未入力です'
-		// 	}
-		// },
 
 		errorPlacement: function(error, element){
 			if(element.attr('name')=='recdocname[]') {
