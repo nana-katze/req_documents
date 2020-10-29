@@ -15,14 +15,14 @@
 		<p>この度は資料請求をしていただき、ありがとうございます。<br>以下の項目に沿って、必要事項を入力してください。</p>
 	</div>
 
-	<form action="confirm.php" method="post" id="rec_documents">
-		<div class="form-item recdocname">
+	<form action="confirm.php" method="post" id="req_documents">
+		<div class="form-item reqdocname">
 			<div class="label-title"><p>希望資料</p></div>
 			<div class="inputarea">
-				<div class="recdocname_error"></div>
+				<div class="reqdocname_error"></div>
 				<p>
-					<input type="checkbox" name="recdocname[]" id="pamphlet" value="2021年度パンフレット（学部）"><label for="pamphlet">2021年度パンフレット（学部）</label><br>
-					<input type="checkbox" name="recdocname[]" id="graduationworks" value="2021年度 卒業制作優秀作品集"><label for="graduationworks">2021年度 卒業制作優秀作品集</label>
+					<input type="checkbox" name="reqdocname[]" id="pamphlet" value="2021年度パンフレット（学部）"><label for="pamphlet">2021年度パンフレット（学部）</label><br>
+					<input type="checkbox" name="reqdocname[]" id="graduationworks" value="2021年度 卒業制作優秀作品集"><label for="graduationworks">2021年度 卒業制作優秀作品集</label>
 				</p>
 			</div>
 		</div>
@@ -61,7 +61,7 @@
 			<div class="customerinfo-input email">
 				<div class="label-title label-title_side"><p>メールアドレス</p></div>
 				<div class="inputarea">
-					<p><input type="email" class="email" name="email_hoge" id='email_hoge' autocomplete="email" placeholder="XXXX@gmail.com"></p>
+					<p><input type="email" class="email" name="email" id='email' autocomplete="email" placeholder="XXXX@gmail.com"></p>
 					<p><input type="email" class="email" name="email_chk" id='email_chk' placeholder="XXXX@gmail.com（確認のため再入力）"></p>
 				</div>
 			</div>
@@ -75,6 +75,7 @@
 					</p>
 				</div>
 			</div>
+		</div>
 
 		<div class="form-item course">
 			<div class="label-title"><p>志望学部・学科をお答えください（複数選択可）</p></div>
@@ -91,7 +92,7 @@
 		</div>
 
 		<div class="btn">
-			<button type="submit" form="rec_documents" class="btn_submit"><p>確認する</p></button>
+			<button type="submit" form="req_documents" class="btn_submit"><p>確認する</p></button>
 		</div>
 
 	</form>

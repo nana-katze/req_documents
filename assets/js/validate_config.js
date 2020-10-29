@@ -5,10 +5,10 @@ $(function(){
 	var errorMsg_email = 'メールアドレス形式で入力してください';
 	var errorMsg_equalTo = 'メールアドレスが一致しません';
 
-	$('#rec_documents').validate({
+	$('#req_documents').validate({
 		errorElement:'p',
 		rules: {
-			'recdocname[]': {
+			'reqdocname[]': {
 				required: true
 			},
 			name: {
@@ -37,7 +37,7 @@ $(function(){
 			email_chk: {
 				required: true,
 				email: true,
-				equalTo: '#email_hoge'
+				equalTo: '#email'
 				}
 			},
 			'course[]': {
@@ -45,7 +45,7 @@ $(function(){
 			},
 
 		messages: {
-			'recdocname[]': {
+			'reqdocname[]': {
 				required: errorMsg_chkbox
 			},
 			name: {
@@ -67,7 +67,7 @@ $(function(){
 				required: errorMsg_required,
 				number: errorMsg_number
 			},
-			email_hoge: {
+			email: {
 				required: errorMsg_required,
 				email: errorMsg_email
 			},
@@ -82,8 +82,8 @@ $(function(){
 		},
 
 		errorPlacement: function(error, element){
-			if(element.attr('name')=='recdocname[]') {
-				error.insertAfter('.recdocname_error');
+			if(element.attr('name')=='reqdocname[]') {
+				error.insertAfter('.reqdocname_error');
 			} else if(element.attr('name')=='course[]') {
 				error.insertAfter('.course_error');
 			} else if(element.attr('name')=='tel'){

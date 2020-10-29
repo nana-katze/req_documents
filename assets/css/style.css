@@ -103,7 +103,7 @@ input[type=checkbox], input[type=radio] {
   width: 35%;
 }
 
-.inputarea .bday, .inputarea .address-level1 {
+.inputarea .address-level1 {
   width: 25%;
 }
 
@@ -113,7 +113,7 @@ p.error {
   color: #ff0000;
 }
 
-.recdocname_error, .tel_error, .course_error {
+.reqdocname_error, .tel_error, .course_error {
   display: none;
 }
 
@@ -131,12 +131,12 @@ p.error {
   border-bottom: none;
 }
 
-.recdocname .label-title, .course .label-title {
+.reqdocname .label-title, .course .label-title {
   border: 1px solid #999999;
   border-bottom: none;
 }
 
-.recdocname .inputarea, .course .inputarea {
+.reqdocname .inputarea, .course .inputarea {
   border: 1px solid #999999;
 }
 
@@ -175,7 +175,7 @@ p.error {
   .inputarea .tel {
     width: 45%;
   }
-  .inputarea .bday, .inputarea .address-level1 {
+  .inputarea .address-level1 {
     width: 35%;
   }
 }

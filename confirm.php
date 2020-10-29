@@ -18,8 +18,8 @@
 
 	<?php
 		if($_SERVER["REQUEST_METHOD"] == "POST"){
-			if(isset($_POST["recdocname"]) && is_array($_POST["recdocname"])){
-				$recdocname = implode("\n", $_POST["recdocname"]);
+			if(isset($_POST["reqdocname"]) && is_array($_POST["reqdocname"])){
+				$reqdocname = implode("\n", $_POST["reqdocname"]);
 			}
 			$name = $_POST["name"];
 			$kananame = $_POST["kananame"];
@@ -37,11 +37,11 @@
 		}
 	?>
 
-<form action="complete.php" method="post" id="rec_documents">
-	<div class="form-item recdocname">
+<form action="complete.php" method="post" id="req_documents">
+	<div class="form-item reqdocname">
 		<div class="label-title"><p>希望資料</p></div>
 		<div class="inputarea">
-			<p><?php echo nl2br($recdocname); ?></p>
+			<p><?php echo nl2br($reqdocname); ?></p>
 		</div>
 	</div>
 		

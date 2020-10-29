@@ -112,7 +112,7 @@ p.error{
 	color:#ff0000;
 }
 
-.recdocname_error, .tel_error, .course_error{
+.reqdocname_error, .tel_error, .course_error{
 	display: none;
 }
 
@@ -127,7 +127,7 @@ p.error{
 	}
 }
 
-.recdocname, .course{
+.reqdocname, .course{
 	.label-title{
 		@include border;
 		border-bottom: none;
