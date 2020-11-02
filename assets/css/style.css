@@ -1,11 +1,15 @@
 @charset "UTF-8";
 /* 共通スタイル */
-h1 {
-  font-size: 16px;
+html {
+  font-size: 62.5%;
 }
 
-p {
-  font-size: 14px;
+body {
+  font-size: 1.6em;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 button {
@@ -71,7 +75,6 @@ input[type=checkbox], input[type=radio] {
 
 /* フォームのスタイル */
 .inputarea {
-  padding: 15px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,6 +84,7 @@ input[type=checkbox], input[type=radio] {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 15px 10px;
 }
 
 .inputarea :not(.label-sub):not(:last-child) {
@@ -159,11 +163,8 @@ p.error {
 
 @media screen and (max-width: 559px) {
   /* 全体の設定 */
-  p {
-    font-size: 10px;
-  }
   .wrapper {
-    width: 90%;
+    width: 95%;
   }
   /* フォームのスタイル */
   .inputarea .email, .inputarea .address-line1 {
@@ -182,11 +183,8 @@ p.error {
 
 @media screen and (max-width: 959px) {
   /* 全体の設定 */
-  p {
-    font-size: 12px;
-  }
   .wrapper {
-    width: 80%;
+    width: 90%;
   }
   /* Gridの設定 */
   .customerinfo-input {

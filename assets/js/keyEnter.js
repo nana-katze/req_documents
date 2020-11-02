@@ -1,3 +1,4 @@
+// EnterをTabに変換
 $(function() {
 	var elements = 'input[type=text], input[type=email], input[type=tel]';
 	$(elements).on('keydown', function(e){

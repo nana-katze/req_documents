@@ -6,12 +6,16 @@ $color-form-bg: #cccccc;
 }
 
 /* 共通スタイル */
-h1{
-	font-size: 16px;
+html{
+	font-size: 62.5%;
 }
 
-p{
-	font-size: 14px;
+body{
+	font-size: 1.6em;
+}
+
+h1{
+	font-size: 2rem;
 }
 
 button{
@@ -82,10 +86,10 @@ input{
 
 /* フォームのスタイル */
 .inputarea{
-	padding: 15px 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	padding: 15px 10px;
 	:not(.label-sub):not(:last-child){
 		margin-bottom: 14px;
 	}
@@ -157,12 +161,8 @@ p.error{
 
 @media screen and (max-width:559px){
 	/* 全体の設定 */
-	p{
-		font-size: 10px;
-	}
-
 	.wrapper{
-		width: 90%;
+		width: 95%;
 	}
 
 	/* フォームのスタイル */
@@ -184,12 +184,8 @@ p.error{
 
 @media screen and (max-width:959px){
 	/* 全体の設定 */
-	p{
-		font-size: 12px;
-	}
-
 	.wrapper{
-		width: 80%;
+		width: 90%;
 	}
 
 	/* Gridの設定 */

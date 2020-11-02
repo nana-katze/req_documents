@@ -1,3 +1,4 @@
+// エラーチェックの設定(validate.min.js)
 $(function(){
 	var errorMsg_chkbox = '1つ以上選択してください';
 	var errorMsg_required = '値を入力してください';
